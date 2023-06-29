@@ -1,0 +1,49 @@
+@mixin font-size-family($size, $family: $base-font-family) {
+   font: {
+      size: #{$size}px;
+      family: $family;
+   }
+}
+
+@mixin desktop {
+   @media screen and (max-width: #{$breakpoint-desktop}) {
+      @content;
+   }
+}
+
+@mixin tablet {
+   @media screen and (max-width: #{$breakpoint-tablet}) {
+      @content;
+   }
+}
+
+@mixin mobile {
+   @media screen and (max-width: #{$breakpoint-mobile}) {
+      @content;
+   }
+}
+
+@mixin main-inner-width-responsive {
+   padding: 0 $content-left-right-indent;
+   width: $content-width-desktop + ($content-left-right-indent * 2);
+
+   @media screen and (max-width: $breakpoint-desktop) {
+      width: $content-width-desktop-sm + ($content-left-right-indent * 2);
+   }
+
+   @media screen and (max-width: $breakpoint-tablet) {
+      width: $content-width-tablet + ($content-left-right-indent * 2);
+   }
+
+   @media screen and (max-width: $breakpoint-mobile) {
+      width: $content-width-mobile;
+   }
+
+   @media screen and (max-width: $breakpoint-mobile) {
+      width: $content-width-mobile;
+   }
+
+   @media screen and (max-width: $breakpoint-mobile-sm) {
+      width: 100%;
+   }
+}

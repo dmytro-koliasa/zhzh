@@ -1,0 +1,203 @@
+@@include('parts/header.html')<div class="wrapper">
+   <div class="inner">
+      <aside class="sidebar sidebar_account">
+         <div class="sidebar__inner">
+            @@include('parts/sidebar-account.html')
+         </div>
+      </aside>
+      <main class="main">
+         <section class="account">
+            <h2 class="title-underlined">Сведения профиля</h2>
+            <div class="account__wrap">
+               <form action="" class="account__form">
+                  <div class="account__inner">
+                     <div class="account__form-group">
+                        <div class="account__form-group-inner">
+                           <label for="email" class="account__form-group-label">E-mail адрес</label>
+                           <input id="email" type="text" class="account__form-group-input-text" placeholder="E-mail">
+                        </div>
+                     </div>
+                     <div class="account__form-group">
+                        <div class="account__form-group-inner">
+                           <label for="phone" class="account__form-group-label">Телефон</label>
+                           <input id="phone" type="text" class="account__form-group-input-text" placeholder="+380 __ ___ __ __">
+                        </div>
+                     </div>
+                     <div class="account__form-group account__form-group_secondary">
+                        <div class="account__form-group-inner">
+                           <label for="name" class="account__form-group-label">Имя</label>
+                           <input id="name" type="text" class="account__form-group-input-text" placeholder="Имя">
+                        </div>
+                     </div>
+                     <div class="account__form-group account__form-group_secondary">
+                        <div class="account__form-group-inner">
+                           <label for="surname" class="account__form-group-label">Фамилия</label>
+                           <input id="surname" type="text" class="account__form-group-input-text" placeholder="Имя">
+                        </div>
+                     </div>
+                     <div class="account__form-group account__form-group_full-width">
+                        <div class="account__form-group-inner">
+                           <label for="photo" class="account__form-group-label">Фото</label>
+                           <input id="photo" type="file" class="account__form-group-input-file" placeholder="Имя">
+                        </div>
+                     </div>
+                     <div class="account__form-group account__form-group_full-width">
+                        <div class="account__form-group-inner">
+                           <label for="about" class="account__form-group-label">О себе</label>
+                           <textarea id="about" cols="30" rows="3" class="account__form-group-textarea" placeholder="Расскажите краткую информацию о себе"></textarea>
+                        </div>
+                     </div>
+                     <div class="account__form-group">
+                        <div class="account__form-group-inner">
+                           <label for="about" class="account__form-group-label">Дата рождения<span class="account__form-group-label-required">*</span></label>
+                           <div class="account__form-group-select-wrap">
+                              <div class="account__form-group-select-item account__form-group-select-item_first">
+                                 <select name="year" id="year" class="account__form-group-select js-select">
+                                    <option value="" disabled selected hidden>Год</option>
+                                    <option value="">1982</option>
+                                    <option value="">1983</option>
+                                    <option value="">1984</option>
+                                    <option value="">1985</option>
+                                    <option value="">1986</option>
+                                    <option value="">1987</option>
+                                    <option value="">1988</option>
+                                    <option value="">1989</option>
+                                    <option value="">1990</option>
+                                 </select>
+                              </div>
+                              <div class="account__form-group-select-item account__form-group-select-item_second">
+                                 <select name="month" id="month" class="account__form-group-select">
+                                    <option value="" disabled selected hidden>Месяц</option>
+                                    <option value="">Январь</option>
+                                    <option value="">Февраль</option>
+                                    <option value="">Март</option>
+                                    <option value="">Апрель</option>
+                                    <option value="">Май</option>
+                                    <option value="">Июнь</option>
+                                    <option value="">Июль</option>
+                                    <option value="">Август</option>
+                                    <option value="">Сентябрь</option>
+                                    <option value="">Октябрь</option>
+                                    <option value="">Ноябрь</option>
+                                    <option value="">Декабрь</option>
+                                 </select>
+                              </div>
+                              <div class="account__form-group-select-item account__form-group-select-item_third">
+                                 <select name="day" id="day" class="account__form-group-select">
+                                    <option value="">День</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                    <option value="">13</option>
+                                    <option value="">14</option>
+                                    <option value="">15</option>
+                                    <option value="">16</option>
+                                    <option value="">17</option>
+                                    <option value="">18</option>
+                                    <option value="">19</option>
+                                    <option value="">20</option>
+                                    <option value="">21</option>
+                                    <option value="">22</option>
+                                    <option value="">23</option>
+                                    <option value="">24</option>
+                                    <option value="">25</option>
+                                    <option value="">26</option>
+                                    <option value="">27</option>
+                                    <option value="">28</option>
+                                    <option value="">29</option>
+                                    <option value="">30</option>
+                                    <option value="">31</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="account__form-group">
+                        <div class="account__form-group-inner">
+                           <label for="about" class="account__form-group-label">Ваш пол</label>
+                           <div class="account__form-group-select-wrap">
+                              <div class="account__form-group-select-item account__form-group-select-item_full-width">
+                                 <select name="gender" id="gender" class="account__form-group-select js-select">
+                                    <option value="" disabled selected hidden>Ваш пол</option>
+                                    <option value="">Мужчина</option>
+                                    <option value="">Женщина</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="account__form-group">
+                        <div class="account__form-group-inner">
+                           <label for="about" class="account__form-group-label">Страна</label>
+                           <div class="account__form-group-select-wrap">
+                              <div class="account__form-group-select-item account__form-group-select-item_full-width">
+                                 <select name="country" id="country" class="account__form-group-select js-select">
+                                    <option value="" disabled selected hidden>Страна</option>
+                                    <option value="">Мужчина</option>
+                                    <option value="">Женщина</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="account__form-group">
+                        <div class="account__form-group-inner">
+                           <label for="about" class="account__form-group-label">Ваш пол</label>
+                           <div class="account__form-group-select-wrap">
+                              <div class="account__form-group-select-item account__form-group-select-item_full-width">
+                                 <select name="languange" id="languange" class="account__form-group-select js-select">
+                                    <option value="" disabled selected hidden>Язык</option>
+                                    <option value="">Украинский</option>
+                                    <option value="">Русский</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="account__form-group account__form-group_full-width">
+                        <div class="account__form-group-inner account__form-group-inner_partial">
+                           <label for="facebook" class="account__form-group-label">Facebook</label>
+                           <input id="facebook" type="text" class="account__form-group-input-text" placeholder="Name in FB">
+                        </div>
+                     </div>
+                     <div class="account__form-group account__form-group_full-width">
+                        <div class="account__form-group-inner account__form-group-inner_partial">
+                           <label for="instagram" class="account__form-group-label">Instagram</label>
+                           <input id="instagram" type="text" class="account__form-group-input-text" placeholder="Name in Instagram">
+                        </div>
+                     </div>
+                     <div class="account__form-group account__form-group_full-width">
+                        <div class="account__form-group-inner account__form-group-inner_partial">
+                           <label for="linkedin" class="account__form-group-label">Linkedin</label>
+                           <input id="linkedin" type="text" class="account__form-group-input-text" placeholder="Name in Linkedin">
+                        </div>
+                     </div>
+
+                     <div class="account__form-group account__form-group_full-width">
+                        <div class="account__form-group-inner account__form-group-inner_last">
+                           <p class="account__form-group-info">
+                              Этот аккаунт создан 24 Декабря, 2021, 8:35:40
+                           </p>
+                           <div class="account__form-group-btns">
+                              <button class="account__form-group-btn" type="submit">Отменить</button>
+                              <button class="account__form-group-btn account__form-group-btn_secondary" type="submit">Сохранить</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </main>
+   </div>
+</div> @@include('parts/footer.html')
